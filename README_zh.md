@@ -11,6 +11,10 @@
 
 你可以在 [GitHub Release 頁面](https://github.com/tc3oliver/delete-unused-node-modules/releases) 下載適合你系統的二進制檔。
 
+1. 下載適合你系統的二進制檔案。
+2. 解壓縮二進制檔案。
+3. 將解壓後的二進制文件移動到與 `node_modules` 目錄同一層級的目錄中。
+
 ## 運行腳本
 
 ### Windows

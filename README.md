@@ -11,6 +11,10 @@ This script is used to delete unused files in the `node_modules` directory to pr
 
 You can download the appropriate binary file for your system on the [GitHub Release page](https://github.com/tc3oliver/delete-unused-node-modules/releases).
 
+1. Download the appropriate binary file for your system.
+2. Unzip the binary file.
+3. Move the extracted binary file to the same level directory as the `node_modules` directory.
+
 ## Running the script
 
 ### Windows

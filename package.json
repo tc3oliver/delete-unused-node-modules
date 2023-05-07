@@ -1,0 +1,19 @@
+{
+    "name": "delete-unused-node-modules",
+    "version": "1.0.0",
+    "description": "Delete Unused Files in `node_modules` directory",
+    "main": "delete-unused-node-modules.js",
+    "bin": {
+      "delete-unused-node-modules": "delete-unused-node-modules.js"
+    },
+    "dependencies": {
+      "cheerio": "^1.0.0-rc.12"
+    },
+    "author": "tc3oliver",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/tc3oliver/delete-unused-node-modules.git"
+    }
+  }
+  

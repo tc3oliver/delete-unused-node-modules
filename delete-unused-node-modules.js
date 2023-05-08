@@ -28,19 +28,19 @@ function processHtmlFile(filePath) {
       let importPath = path.join(projectRoot, url);
 
       // 使用正則表達式匹配路徑中 node_modules 的位置
-      const match = /node_modules\/(.*)/.exec(importPath);
+    const match = new RegExp(`node_modules${path.sep}(.*)`).exec(importPath);
 
-      if (match) {
-        // 如果匹配成功，截斷前面的路徑部分，只保留 node_modules 及其後面的路徑
-        const nodeModulesPath = match[0];
-        console.log(nodeModulesPath);
+    if (match) {
+      // 如果匹配成功，截斷前面的路徑部分，只保留 node_modules 及其後面的路徑
+      const nodeModulesPath = match[0];
+      console.log(nodeModulesPath);
 
-        // 將符合條件的路徑存儲到 paths 陣列中
-        paths.push(nodeModulesPath);
-      } else {
-        // 如果匹配失敗，表示路徑中不包含 node_modules
-        console.log("路徑中不包含 node_modules");
-      }
+      // 將符合條件的路徑存儲到 paths 陣列中
+      paths.push(nodeModulesPath);
+    } else {
+      // 如果匹配失敗，表示路徑中不包含 node_modules
+      console.log("路徑中不包含 node_modules");
+    }
       console.log(importPath);
     }
   });

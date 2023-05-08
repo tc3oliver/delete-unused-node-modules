@@ -7,11 +7,38 @@
 
 ## 使用方法
 
-### 直接運行腳本
+如果您的目錄結構如下，可以按照以下步驟執行：
 
 ```
-node delete-unused-node-modules.min.js
+.
+├── README.md
+├── delete-unused-node-modules.min.js
+├── index.html
+├── node_modules
+├── package-lock.json
+├── package.json
+└── src
+    ├── component
+    ├── font
+    ├── img
+    ├── js
+    ├── page
+    └── css
 ```
+
+### 直接運行腳本
+
+1. 在 [GitHub Release 頁面](https://github.com/tc3oliver/delete-unused-node-modules/releases) 頁面下載 `delete-unused-node-modules.min.js`。
+
+2. 將 `delete-unused-node-modules.min.js` 移動到與 `node_modules` 目錄同一層級的目錄中。
+
+3. 執行以下命令：
+
+   ```
+   node delete-unused-node-modules.min.js
+   ```
+
+這樣，腳本就會刪除未使用的 `node_modules` 文件，幫助您釋放磁盤空間。請注意，在運行腳本之前，請務必備份您的專案。
 
 ### 安裝
 

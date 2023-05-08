@@ -7,6 +7,39 @@ This script is used to delete unused `node_modules` files to free up disk space,
 
 ## Usage
 
+If your directory structure is as follows, you can follow these steps to execute:
+
+```
+.
+├── README.md
+├── delete-unused-node-modules.min.js
+├── index.html
+├── node_modules
+├── package-lock.json
+├── package.json
+└── src
+    ├── component
+    ├── font
+    ├── img
+    ├── js
+    ├── page
+    └── css
+```
+
+### Directly run the script
+
+1. Download `delete-unused-node-modules.min.js` on the [GitHub Release page](https://github.com/tc3oliver/delete-unused-node-modules/releases).
+
+2. Move `delete-unused-node-modules.min.js` to the same level directory as the `node_modules` directory.
+
+3. Execute the following command:
+
+   ```
+   node delete-unused-node-modules.min.js
+   ```
+
+This will delete the unused `node_modules` files and help you free up disk space. Please note that before running the script, be sure to back up your project.
+
 ### Directly run the script
 
 ```

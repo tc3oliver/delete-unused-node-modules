@@ -1,4 +1,4 @@
-# 刪除未使用的 `node_modules` 文件
+# 刪除未使用的 Node Modules 文件
 
 - [中文版文檔](README_zh.md)
 - [English README](README.md)
@@ -6,6 +6,12 @@
 這個腳本用於刪除未使用的 `node_modules` 文件，避免開發過程中因為添加和刪除庫導致 `node_modules` 目錄變得越來越大，佔用越來越多的磁盤空間。這個腳本可以幫助您釋放磁盤空間，只保留在您的代碼中實際使用的文件。
 
 ## 使用方法
+
+### 直接運行腳本
+
+```
+node delete-unused-node-modules.min.js
+```
 
 ### 安裝
 
